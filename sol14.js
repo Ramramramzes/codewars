@@ -3,10 +3,5 @@
 // [1, 2, 3] --> [2, 4, 6]
 
 function maps(x){
-  let newArr = [];
-  for (i of x) {
-    i *= 2;
-    newArr.push(i);
-  }
-  return(newArr);
+  return x.map((x)=> x * 2)
 }
