@@ -4,5 +4,5 @@
 // Sam Harris => S.H
 
 function abbrevName(name){
-  return name.split(' ')[0][0].toUpperCase() + '.' + name.split(' ')[1][0].toUpperCase();
+  return name.split(' ').map((a)=>a[0].toUpperCase()).join('.')
 }
