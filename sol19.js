@@ -9,4 +9,3 @@ function positiveSum(a){
     }
     return sum;
 }
-
