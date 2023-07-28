@@ -16,5 +16,3 @@ function alphabetPosition(text) {
     }
     return newArr.join().toString();
 }
-
-alphabetPosition("The sunset sets at twelve o' clock.");

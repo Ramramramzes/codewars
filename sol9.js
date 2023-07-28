@@ -16,5 +16,3 @@ function wave(str){
   }
   return res;
 }
-
-
