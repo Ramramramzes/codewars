@@ -9,24 +9,9 @@
 function comp(array1, array2){
   let flag = false;
   if(array1 != null && array2 != null){
-    array1.sort((a,b)=>a-b)
-    array2.sort((a,b)=>a-b)
-    if(array1.length == array2.length){
-      if(array1.length != 0){
-        for (let i = 0; i < array1.length; i++) {
-          if(array2[i] == Math.pow(array1[i],2)){
-            flag = true;
-          }else{
-            flag = false;
-            break;
-          }
-        }
-      }else{
-        flag = true;
-      }
-    }else{
-      flag = false;
-    }
+    array1.sort((a,b)=>a-b);
+    array2.sort((a,b)=>a-b);
+    flag = array1.map((v)=> v * v).every((v,i)=> v == array2[i]);
   }
   return flag;
 }
