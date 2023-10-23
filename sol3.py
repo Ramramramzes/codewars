@@ -8,4 +8,4 @@
 # "Hi There." --> "There. Hi"
 
 def reverse(st):
-  return " ".join(st.split(" ")[::-1])
+  return " ".join(list(filter(None,st.strip().split(" ")))[::-1])
